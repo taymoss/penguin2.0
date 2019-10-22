@@ -11,8 +11,7 @@ var penPromise = d3.json("/penguins/penguins/classData.json")
     })
 
 var penImage = function(pen){
-    var column = 
-    d3.select("#pen")
+var column = d3.select("#pen")
       .selectAll("img")
       .data(pen)
       .enter()

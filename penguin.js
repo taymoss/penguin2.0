@@ -9,6 +9,14 @@ var penPromise = d3.json("/penguins/penguins/classData.json")
         d3.select("#pen").text("No penguins")
         console.log("err", err);
     })
+/*
+d3.select ("table")
+.selectAll("tr")
+.data(pen)
+.enter()
+.append("tr")
+
+*/
 
 var penImage = function(pen){
 var column = d3.select("td")

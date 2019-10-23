@@ -11,7 +11,7 @@ var penPromise = d3.json("/penguins/penguins/classData.json")
     })
 
 var penImage = function(pen){
-var column = d3.select("#pen")
+var column = d3.select("td")
       .selectAll("img")
       .data(pen)
       .enter()
@@ -21,6 +21,15 @@ var column = d3.select("#pen")
       
     })
 }
+
+var meanQuiz = function(pen){
+    var mapQuiz = pen.quizes.map(function(quiz){
+    return quiz.grade;
+    })
+    var mean = d3.mean(mapQuiz)
+    return mean;
+}
+
     column.append("p")
 var classroom = [];
 var Quiz = function(quiz){

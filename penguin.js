@@ -97,15 +97,3 @@ var summary = function(pen){
     pen.quiz = qU;
     
 }
-
-
-var Quiz = function(quiz){
-    d3.select("#quiz")
-    .selectAll("p")
-    .data(quiz)
-    .enter()
-    .append("p")
-     .text(function(p){
-        return "penguins/penguins/" + p.quizes;
-    }) 
-}

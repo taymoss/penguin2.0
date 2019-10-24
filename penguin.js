@@ -56,7 +56,7 @@ var meanQuiz = function(pen){
     var mapQuiz = pen.quizes.map(function(quiz){
     return quiz.grade;
     })
-    var meanQ = d3.mean(mapQuiz)
+    var meanQ = d3.mean(mapQuiz);
     return meanQ*10;
 }
 
@@ -64,7 +64,7 @@ var meanTest = function(pen){
     var mapTest = pen.test.map(function(test){
         return test.grade;
     })
-    var meanT = d3.mean(mapTest)
+    var meanT = d3.mean(mapTest);
     return meanT;
 }
 
@@ -79,7 +79,7 @@ var meanHW = function(pen){
     var mapHW = pen.homework.map(function(hw){
         return hw.grade*2;
     })
-    var meanW = d3.mean(mapHW)
+    var meanW = d3.mean(mapHW);
     return meanW;
 }
                                  

@@ -1,4 +1,4 @@
-var penPromise = d3.json("/penguins/penguins/classData.json")
+var penPromise = d3.json("penguins/penguins/classData.json")
     penPromise.then(function(pen){
         d3.select("th").text("Penguins")
         console.log("pen", pen);
